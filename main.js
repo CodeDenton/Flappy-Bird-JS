@@ -163,6 +163,7 @@ function restartGame() {
     //empty the array
     pipes = [];
     bird.style.top = position + "px";
+    restartButton.style.display = "none";
 
 }
 
