@@ -7,11 +7,12 @@ body {
 }
 
 #gameArea {
+    background-image: url("sky.jpg");
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: skyblue;
     overflow: hidden;
+    background-color: skyblue;
 }
 
 
