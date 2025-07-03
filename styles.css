@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+#gameArea {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: skyblue;
+    overflow: hidden;
+}
+
+
+#bird {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    image-rendering: pixelated; /* optional for pixel art */
+    object-fit: contain;        /* prevents stretching */
+    /* border: 2px dashed red; */
+
+    
+}
+
+#score {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    font-size: 48px;
+    font-family: Impact, sans-serif;
+    z-index: 10;
+}
+
+#restartButton {
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    font-size: 48px;
+    font-family: Impact, sans-serif;
+    z-index: 10;
+    display: none;
+}
+
+.pipe {
+    position: absolute;
+    width: 60px;
+    background-color: green;
+    /* border: 2px dashed black; */
+
+  }
+  
+  .pipe.top {
+    top: 0;
+    border-bottom: 5px solid darkgreen;
+  }
+  
+  .pipe.bottom {
+    border-top: 5px solid darkgreen;
+  }
+  
