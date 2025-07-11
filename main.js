@@ -29,6 +29,17 @@ document.addEventListener('keydown', function (e) {
 
 })
 
+// left click = jump
+document.addEventListener('mousedown', function (e) {
+    if(e.button === 0) {
+        e.preventDefault()
+        if (!runGame) {
+            startGame()
+        }
+        velocity = jumpStrength;
+    }
+})
+
 function startGame() {
     runGame = true;
     pipeInterval = setInterval(createPipePair, 2000);
